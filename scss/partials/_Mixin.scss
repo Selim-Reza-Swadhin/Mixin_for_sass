@@ -1,0 +1,22 @@
+// mixin
+@mixin displayProperties($val1, $val2, $val3) {
+    display: $val1;
+    align-items: $val2;
+    justify-content: $val3;
+}
+
+@mixin borderRadius($value: 10px) {
+    border-radius: $value;
+}
+
+
+/* mixin default value */
+
+@mixin containerSize($value1: 150px, $value2: 150px) {
+    height: $value1;
+    width: $value2;
+}
+
+@mixin colorr($color) {
+    background: $color;
+}

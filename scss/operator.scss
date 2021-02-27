@@ -1,0 +1,42 @@
+//equality operator
+.operator {
+    // margin: 10px;
+    //margin: 10px==10px; //true
+    //margin: 10px==20px; //false
+    margin: 10px!=10px; //false
+}
+
+//relational operator
+.operator {
+    //margin: 10px > 5px;//true
+    //margin: 10px < 5px; //false
+    margin: 10px >=5px; //true
+    //margin: 10px <=5px; //false
+}
+
+//boolean operator
+.operator {
+    //margin: 10px==10px and 20px==20px; //true
+    //margin: 10px==10px and 20px==25px; //false
+    //margin: 10px==10px or 20px==25px; //true
+    margin: not 10px==10px; //false
+}
+
+//string operator
+$var1:10;
+.operator {
+    margin: $var1 + px;
+    //margin: $var1 + %;
+    //margin: $var1 + rem;
+}
+
+//numeric operator
+$var1:10;
+$var2:2;
+.operator {
+    //margin: 12 + 10 + px;
+    //margin: $var1 + $var2 + px;
+    //margin: $var1 * $var2 + px;
+    //margin: $var1 - $var2 + px;
+    margin: $var1 % $var2 + px;
+}

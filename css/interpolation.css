@@ -1,0 +1,30 @@
+/* @mixin space() {
+    margin-right: 20px;
+}
+.ex-1 {
+    @include space();
+} */
+.ex-1 {
+  margin-right: 20px;
+}
+
+.ex-2 {
+  margin-right: 50px;
+}
+
+.ex-3 {
+  margin-top: 12px;
+}
+
+.ex-4 {
+  margin-bottom: 20px;
+}
+
+.ex-5 {
+  margin-left: 10px;
+}
+
+.ex-6 {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=interpolation.css.map */

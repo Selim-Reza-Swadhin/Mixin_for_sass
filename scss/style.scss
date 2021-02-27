@@ -1,0 +1,73 @@
+ //global
+ @import 'partials/Global';
+ //variables
+ @import 'partials/Variables';
+ // mixins
+ @import 'partials/Mixin';
+ .wrapper {
+     border: 2px solid #000;
+     padding: 10px;
+     width: 700px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     //padding: $sectionPadding;
+ }
+ 
+ .box-1 {
+     @include colorr(#2af);
+     //@include containerSize(90px, 40px);
+     @include containerSize(150px, 150px);
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-2 {
+     @include colorr(rgb(31, 114, 165));
+     @include containerSize();
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-3 {
+     @include colorr(rgb(9, 59, 90));
+     @include containerSize(150px, 150px);
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-4 {
+     @include colorr(rgb(33, 39, 43));
+     @include containerSize();
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-5 {
+     @include colorr(#2af);
+     //@include containerSize(90px, 40px);
+     @include containerSize(150px, 150px);
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-6 {
+     @include colorr(rgb(31, 114, 165));
+     @include containerSize();
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-7 {
+     @include colorr(rgb(9, 59, 90));
+     @include containerSize(150px, 150px);
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }
+ 
+ .box-8 {
+     @include colorr(rgb(33, 39, 43));
+     @include containerSize();
+     @include displayProperties(flex, center, center);
+     @include borderRadius();
+ }

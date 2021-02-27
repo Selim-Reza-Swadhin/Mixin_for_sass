@@ -1,0 +1,39 @@
+/* @mixin space() {
+    margin-right: 20px;
+}
+.ex-1 {
+    @include space();
+} */
+
+@mixin space($value) {
+    margin-right: $value;
+}
+
+.ex-1 {
+    @include space(20px);
+}
+
+.ex-2 {
+    @include space(50px);
+}
+
+//interpolation
+@mixin spaceInterpo($position, $value) {
+    margin-#{$position}: $value;
+}
+
+.ex-3 {
+    @include spaceInterpo(top, 12px);
+}
+
+.ex-4 {
+    @include spaceInterpo(bottom, 20px);
+}
+
+.ex-5 {
+    @include spaceInterpo(left, 10px);
+}
+
+.ex-6 {
+    @include spaceInterpo(right, 20px);
+}

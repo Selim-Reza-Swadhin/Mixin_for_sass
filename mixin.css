@@ -1,0 +1,60 @@
+/* mixins */
+
+@mixin displayProperties($val1, $val2, $val3) {
+    display: $val1;
+    align-items: $val2;
+    justify-content: $val3;
+}
+
+@mixin borderRadius($value: 10px) {
+    border-radius: $value;
+}
+
+
+/* mixin default value */
+
+@mixin containerSize($value1: 150px, $value2: 150px) {
+    height: $value1;
+    width: $value2;
+}
+
+@mixin color($color) {
+    background: $color;
+}
+
+.wrapper {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1 {
+    @include color(#2af);
+    @include containerSize(150px, 150px);
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-2 {
+    @include color(rgb(31, 114, 165));
+    @include containerSize();
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-3 {
+    @include color(rgb(9, 59, 90));
+    @include containerSize(150px, 150px);
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-4 {
+    @include color(rgb(33, 39, 43));
+    @include containerSize();
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}

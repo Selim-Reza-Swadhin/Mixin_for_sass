@@ -1,0 +1,29 @@
+//footer files
+.box-5 {
+    @include color(#2af);
+    //@include containerSize(90px, 40px);
+    @include containerSize(150px, 150px);
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-6 {
+    @include color(rgb(31, 114, 165));
+    @include containerSize();
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-7 {
+    @include color(rgb(9, 59, 90));
+    @include containerSize(150px, 150px);
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}
+
+.box-8 {
+    @include color(rgb(33, 39, 43));
+    @include containerSize();
+    @include displayProperties(flex, center, center);
+    @include borderRadius();
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;IAKI;AAMJ,AAAA,KAAK,CAAC;EAHF,YAAY,EAIG,IAAI;CACtB;;AAED,AAAA,KAAK,CAAC;EAPF,YAAY,EAQG,IAAI;CACtB;;AAOD,AAAA,KAAK,CAAC;EAHF,UAAmB,EAIQ,IAAI;CAClC;;AAED,AAAA,KAAK,CAAC;EAPF,aAAmB,EAQW,IAAI;CACrC;;AAED,AAAA,KAAK,CAAC;EAXF,WAAmB,EAYS,IAAI;CACnC;;AAED,AAAA,KAAK,CAAC;EAfF,YAAmB,EAgBU,IAAI;CACpC",
+    "sources": [
+        "../scss/interpolation.scss"
+    ],
+    "names": [],
+    "file": "interpolation.css"
+}
