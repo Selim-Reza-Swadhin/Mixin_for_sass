@@ -1,0 +1,59 @@
+$container: 1250px;
+@function half($container) {
+    //@return $container;
+    @return $container/2; //divide
+}
+
+@function one-four($container) {
+    //@return $container;
+    @return $container/4;
+}
+
+.container {
+    width: $container;
+    margin: 0 auto;
+}
+
+.half {
+    width: half($container);
+}
+
+.one-four {
+    width: one-four($container);
+}
+
+//image function
+@mixin bg-cover {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+$imgUrl: '../assets/';
+@function bg($imgName) {
+    //@return ($imgUrl + $imgName);
+    @return url($imgUrl + $imgName);
+}
+
+.box1 {
+    @include bg-cover;
+    //background-image: url('../assets/hosneara1.jpg');
+    //background-image: url(bg("hosneara1.jpg"));
+    background-image: bg("hosneara1.jpg");
+}
+
+.box2 {
+    @include bg-cover;
+    //background-image: url('../assets/p2.png');
+    //background-image: url(bg('p2.png'));
+    background-image: bg('p2.png');
+}
+
+.box3 {
+    @include bg-cover;
+    //background-image: url('../assets/p3.png');
+    //background-image: url(bg('p3.png'));
+    background-image: bg('p3.png');
+}

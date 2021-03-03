@@ -1,0 +1,12 @@
+@mixin wrapperBackground($fontSize) {
+    @if($fontSize < 25px) {
+        background-color: red;
+    }
+    @else {
+        background-color: blue;
+    }
+}
+
+.wrapper {
+    @include wrapperBackground(50px);
+}
