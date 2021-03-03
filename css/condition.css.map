@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AASA,AAAA,QAAQ,CAAC;EAJD,gBAAgB,EAAE,IAAI;CAM7B",
+    "sources": [
+        "../sass/condition.scss"
+    ],
+    "names": [],
+    "file": "condition.css"
+}
