@@ -1,0 +1,31 @@
+@for $i from 1 through 5 {
+    .box {
+        // width: 100px;
+        //width: 100px + $i;
+        //width: 100px * $i;
+        //width: 100px * $i;
+    }
+    .box-#{$i} {
+        //interpolation
+        //width: 100px * $i;
+    }
+}
+
+$container:1200px;
+@for $i from 1 through 12 {
+    //.col-#{$i} {width: 100px * $i;}
+    //.col-#{$i} {width: 100px / $i;}
+    //.col-#{$i} {width: 100px % $i;}
+}
+
+@for $i from 1 through 5 {
+    .mt-#{$i * 10} {
+        margin-top: 10px * $i;
+    }
+}
+
+@for $i from 1 through 5 {
+    .pr-#{$i * 10} {
+        padding-right: 10px * $i;
+    }
+}
