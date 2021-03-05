@@ -1,0 +1,34 @@
+ .red-text {
+     color: red
+ }
+ 
+ .green-text {
+     color: green
+ }
+ 
+ .blue-text {
+     color: blue
+ }
+ 
+ .black-text {
+     color: black
+ }
+ 
+ @each $color in red,
+ green,
+ blue,
+ black {
+     //interpolation
+     .#{$color}-text {
+         color: $color
+     }
+ }
+ 
+ $colors: ( color1: yellow, color2: tomato, color3: white, color4: pink);
+ @each $key,
+ $color in $colors {
+     //interpolation
+     .#{$color}-text {
+         color: $color
+     }
+ }
